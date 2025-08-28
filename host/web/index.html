@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AuroraVHDL — Fractal Control</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <h1>AuroraVHDL</h1>
+  <p>Real‑Time Fractal Visualizer — FPGA + VHDL</p>
+</header>
+<main>
+  <section class="card">
+    <h2>Parameters</h2>
+    <label>Max Iterations <input id="maxIter" type="range" min="16" max="255" value="128" /></label>
+    <button id="apply">Apply</button>
+    <p id="msg"></p>
+  </section>
+  <section class="card">
+    <h2>How to connect</h2>
+    <ol>
+      <li>Jalankan <code>server.py</code> dengan port serial FPGA.</li>
+      <li>Buka halaman ini (otomatis).</li>
+      <li>Atur parameter, lihat visual di monitor VGA FPGA.</li>
+    </ol>
+  </section>
+</main>
+<footer>© 2025 AuroraVHDL</footer>
+<script src="script.js"></script>
+</body>
+</html>
